@@ -18,14 +18,15 @@ getIP();
 
 function enter(e) {
     if(e.keyCode === 13){
-        getInfo(input.value);
-    }
+        getInfo(input.value);        
+    }    
 }
 
 async function getInfo(data){
     const res = await fetch(`${api.endpoint}weather?q=${data}&units=metric&appID=${api.key}`);
     const result = await res.json();
     displayResult(result);
+    input.value = '';
 }
 
 function displayResult(result){

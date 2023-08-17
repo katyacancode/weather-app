@@ -3,6 +3,7 @@ body {
     background-size: cover;
     background-repeat: no-repeat;    
     margin: 0;
+    background-color: darkslateblue;  
 }
 
 #container {
@@ -49,13 +50,13 @@ body {
 
 #feelsLike {
     color:#fff;
-    font-size: 30px;
+    font-size: 28px;
     font-weight: bold;
 }
 
 #conditions {
     color: white;
-    font-size: 32px;
+    font-size: 30px;
     font-weight: bold;
     font-style: italic;
 }
